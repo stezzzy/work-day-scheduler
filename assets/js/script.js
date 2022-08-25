@@ -10,10 +10,11 @@ let twoBtn = document.getElementById('2-btn')
 let threeBtn = document.getElementById('3-btn')
 let fourBtn = document.getElementById('4-btn')
 let fiveBtn = document.getElementById('5-btn')
-
+// Displays current date via moment under header
 let today = moment().format("dddd, MMM Do, YYYY");
 $("#currentDay").text(today);
 
+//Changes color of textareas based on time of day
 let changeColor = function () {
     let hourOfDay = moment().format('HH');
     for (i=0; i < calenderTimes.length; i++) {
@@ -30,7 +31,7 @@ let changeColor = function () {
         }
     }
 changeColor();
-
+// Setting save buttons to store textarea values to localstorage 
 nineBtn.addEventListener("click", function () {
     localStorage.setItem('toDoAtNine', document.getElementById("9").value)
 })
@@ -60,7 +61,7 @@ fiveBtn.addEventListener("click", function () {
 })
 
 // document.getElementById("9").value(localStorage.getItem(toDoAtNine))
-
+//Getting stored values from local storage
 $("#9").val(localStorage.getItem("toDoAtNine"));
 $("#10").val(localStorage.getItem("toDoAtTen"));
 $("#11").val(localStorage.getItem("toDoAtEleven"));
