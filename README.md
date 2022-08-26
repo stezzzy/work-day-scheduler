@@ -8,7 +8,7 @@ This project will allow users to set tasks throughout the day for them to comple
 
 ## Usage
 
-To use the password generator:
+To use the scheduler:
 
 1. Find the corresponding row for the time of day that you would like to designate to your task.
 2. Click on the text field (Where the placeholder text says "Put your task here!" and type out your task!
